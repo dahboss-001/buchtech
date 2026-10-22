@@ -52,11 +52,16 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--acc)}
 #top{position:fixed;right:28px;bottom:88px;width:40px;height:40px;border-radius:50%;border:1px solid var(--acc);background:var(--card);color:var(--acc);font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;z-index:20}
 #top.show{opacity:1;pointer-events:auto}
 @media(max-width:720px){.row{grid-template-columns:1fr}.hero{padding:70px 0 60px}section{padding:60px 0}}
+.work{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.proj{padding:0;overflow:hidden;display:flex;flex-direction:column}.proj img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;display:block;border-bottom:1px solid var(--line)}
+.proj .pb{padding:24px;display:flex;flex-direction:column;gap:12px;flex:1}.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:.78rem;padding:4px 10px;border-radius:99px;background:rgba(167,139,250,.12);color:var(--acc2);border:1px solid rgba(167,139,250,.3)}
+.proj .btn{align-self:flex-start;margin-top:auto}
 </style></head><body>
 <nav><div class="wrap"><a href="#home" class="logo"><svg class="lg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#0b0f17"/><path d="M32 6l22 12.5v27L32 58 10 45.5v-27z" fill="none" stroke="url(#g)" stroke-width="3.5"/><path d="M24 20h10a6 6 0 010 12H24zM24 32h12a6.5 6.5 0 010 13H24z" fill="none" stroke="url(#g)" stroke-width="3.5" stroke-linejoin="round"/><circle cx="24" cy="20" r="2.6" fill="#22d3ee"/><circle cx="24" cy="45" r="2.6" fill="#a78bfa"/></svg>
 <span style="color:var(--text)">Buch<span>Tech</span></span></a>
 <button class="burger" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">&#9776;</button>
-<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#why">Why Us</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div></nav>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#why">Why Us</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div></nav>
 <header class="hero" id="home"><div class="wrap"><span class="tag">BuchTech Super Intelligence Services</span>
 <h1>Build your website with <span class="grad">minimal cost</span> and <span class="grad">quick turnaround</span></h1>
 <p>Websites, apps, AI tools, content and social media campaigns, delivered fast and affordably.</p>
@@ -68,6 +73,12 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--acc)}
 <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg><h3>AI Tools</h3><p>Practical AI-powered tools to help you work smarter.</p><ul><li>Automation of repetitive tasks</li><li>AI-assisted content &amp; workflows</li><li>Tools tailored to your goals</li></ul></div>
 <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg><h3>Content Creation</h3><p>Content that tells your story and connects with your audience.</p><ul><li>Website &amp; social media copy</li><li>Posts and visual content</li><li>Consistent brand voice</li></ul></div>
 <div class="card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 11l18-7v16L3 13zM7 12.5V18a2 2 0 004 0v-4"/></svg><h3>Social Media Campaigns</h3><p>Campaigns planned to grow your reach on social platforms.</p><ul><li>Campaign planning</li><li>Content for each platform</li><li>Focused on growing reach</li></ul></div>
+</div></div></section>
+<section id="work"><div class="wrap"><h2>Recent Work</h2><p class="sub">A sample of a project built by BuchTech.</p><div class="work">
+<article class="card proj"><img src="images/content-creator.png" alt="Screenshot of the AI Content Creator Assistant web app" width="1280" height="800" loading="lazy">
+<div class="pb"><h3>AI Content Creator Assistant</h3><p>A web app that turns any topic into short-form video ideas, hooks, captions and a ready-to-film script. Users pick a platform (TikTok, Instagram Reels or YouTube Shorts) and a tone, and can save generated content. It is powered by Google Gemini.</p>
+<div class="tags"><span>Web App</span><span>AI</span><span>Content Creation</span></div>
+<a class="btn" href="https://content-creator-vo84.onrender.com/" target="_blank" rel="noopener">View live site &#8599;</a></div></article>
 </div></div></section>
 <section id="why"><div class="wrap"><h2>Why choose BuchTech</h2><p class="sub">Quality digital work without the long waits or high costs.</p><ul class="why">
 <li><span class="check">&#10003;</span><div><b>Fast delivery</b><span style="color:var(--muted)">Quick turnaround so you can launch sooner.</span></div></li>
