@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BuchTech Super Intelligence Services</title>
+<meta name="description" content="BuchTech Super Intelligence Services: build your website with minimal cost and quick turnaround.">
+<meta name="theme-color" content="#0b0f17">
+<meta name="keywords" content="website development, app development, AI tools, content creation, social media campaigns, affordable website, BuchTech">
+<meta property="og:type" content="website"><meta property="og:title" content="BuchTech Super Intelligence Services">
+<meta property="og:description" content="Build your website with minimal cost and quick turnaround. Websites, apps, AI tools, content and social media campaigns.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0f17;--card:#121826;--line:#1f2937;--text:#e5e7eb;--muted:#9ca3af;--acc:#22d3ee;--acc2:#a78bfa}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{max-width:1100px;margin:auto;padding:0 20px}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.2}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,15,23,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:1.2rem}.logo span{color:var(--acc)}
+.links{display:flex;gap:24px}.links a{color:var(--muted);font-size:.95rem}.links a:hover{color:var(--acc)}
+.burger{display:none;background:none;border:0;color:var(--text);font-size:1.6rem;cursor:pointer}
+.btn{display:inline-block;padding:12px 24px;border-radius:10px;font-weight:600;background:linear-gradient(90deg,var(--acc),var(--acc2));color:#0b0f17;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn.ghost{background:none;border:1px solid var(--acc);color:var(--acc)}
+.hero{padding:110px 0 90px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(34,211,238,.15),transparent 60%)}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);margin:16px 0}.grad{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:620px;margin:0 auto 32px;font-size:1.15rem}.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.tag{display:inline-block;border:1px solid var(--line);padding:6px 14px;border-radius:99px;color:var(--acc);font-size:.85rem}
+section{padding:80px 0}section h2{font-size:2rem;margin-bottom:12px}.sub{color:var(--muted);margin-bottom:40px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--acc);transform:translateY(-4px)}.card svg{width:40px;height:40px;stroke:var(--acc);margin-bottom:14px}
+.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:.95rem}
+.alt{background:#0e1320;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why li{list-style:none;display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}.why li b{display:block}
+.check{flex:none;width:28px;height:28px;border-radius:50%;background:rgba(34,211,238,.15);color:var(--acc);display:grid;place-items:center;font-weight:800}
+.step .n{font-family:'Space Grotesk';font-size:2.4rem;color:var(--acc);font-weight:700}
+.contact a.card{display:block}.contact .card b{display:block;color:var(--acc);word-break:break-all}
+footer{padding:30px 0;text-align:center;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+@media(max-width:720px){.burger{display:block}.links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--bg);padding:20px;border-bottom:1px solid var(--line)}.links.open{display:flex}}
+.logo{display:flex;align-items:center;gap:10px}.lg{width:34px;height:34px}
+.card ul{margin-top:12px;padding-left:18px;color:var(--muted);font-size:.9rem}.card li::marker{color:var(--acc)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin-top:10px}
+form{display:grid;gap:14px;margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+input,select,textarea{width:100%;background:#0b0f17;border:1px solid var(--line);border-radius:10px;padding:12px;color:var(--text);font:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--acc)}
+.fbtn{display:flex;gap:12px;flex-wrap:wrap}button.btn{border:0;cursor:pointer;font:inherit;font-weight:600}
+.wa{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.4);z-index:20}
+.wa svg{width:30px;height:30px;fill:#fff}
+#top{position:fixed;right:28px;bottom:88px;width:40px;height:40px;border-radius:50%;border:1px solid var(--acc);background:var(--card);color:var(--acc);font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;z-index:20}
+#top.show{opacity:1;pointer-events:auto}
+@media(max-width:720px){.row{grid-template-columns:1fr}.hero{padding:70px 0 60px}section{padding:60px 0}}
+</style></head><body>
+<nav><div class="wrap"><a href="#home" class="logo"><svg class="lg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#0b0f17"/><path d="M32 6l22 12.5v27L32 58 10 45.5v-27z" fill="none" stroke="url(#g)" stroke-width="3.5"/><path d="M24 20h10a6 6 0 010 12H24zM24 32h12a6.5 6.5 0 010 13H24z" fill="none" stroke="url(#g)" stroke-width="3.5" stroke-linejoin="round"/><circle cx="24" cy="20" r="2.6" fill="#22d3ee"/><circle cx="24" cy="45" r="2.6" fill="#a78bfa"/></svg>
+<span style="color:var(--text)">Buch<span>Tech</span></span></a>
+<button class="burger" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">&#9776;</button>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#why">Why Us</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div></nav>
+<header class="hero" id="home"><div class="wrap"><span class="tag">BuchTech Super Intelligence Services</span>
+<h1>Build your website with <span class="grad">minimal cost</span> and <span class="grad">quick turnaround</span></h1>
+<p>Websites, apps, AI tools, content and social media campaigns, delivered fast and affordably.</p>
+<div class="cta"><a class="btn" href="#contact">Start your project</a><a class="btn ghost" href="#services">View services</a></div></div></header>
+<section id="about"><div class="wrap"><h2>About</h2><p class="sub" style="margin-bottom:0">BuchTech Super Intelligence Services helps individuals and businesses get online and grow. The focus is simple: modern, AI-powered digital work at a low cost, with quick turnaround, whether you need a website, an app, AI tools, content, or a social media campaign.</p></div></section>
+<section id="services" class="alt"><div class="wrap"><h2>Services</h2><p class="sub">Everything you need to build and grow your presence online.</p><div class="grid">
+<div class="card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 6.5h.01M9 6.5h.01"/></svg><h3>Website Development</h3><p>Affordable, fast websites built to look great on every device.</p><ul><li>Responsive layout</li><li>Mobile-friendly design</li><li>Contact links &amp; basic SEO setup</li></ul></div>
+<div class="card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><h3>App Development</h3><p>Apps designed around your needs and your users.</p><ul><li>Planning around your needs</li><li>User-friendly interface</li><li>Support through launch</li></ul></div>
+<div class="card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg><h3>AI Tools</h3><p>Practical AI-powered tools to help you work smarter.</p><ul><li>Automation of repetitive tasks</li><li>AI-assisted content &amp; workflows</li><li>Tools tailored to your goals</li></ul></div>
+<div class="card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg><h3>Content Creation</h3><p>Content that tells your story and connects with your audience.</p><ul><li>Website &amp; social media copy</li><li>Posts and visual content</li><li>Consistent brand voice</li></ul></div>
+<div class="card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 11l18-7v16L3 13zM7 12.5V18a2 2 0 004 0v-4"/></svg><h3>Social Media Campaigns</h3><p>Campaigns planned to grow your reach on social platforms.</p><ul><li>Campaign planning</li><li>Content for each platform</li><li>Focused on growing reach</li></ul></div>
+</div></div></section>
+<section id="why"><div class="wrap"><h2>Why choose BuchTech</h2><p class="sub">Quality digital work without the long waits or high costs.</p><ul class="why">
+<li><span class="check">&#10003;</span><div><b>Fast delivery</b><span style="color:var(--muted)">Quick turnaround so you can launch sooner.</span></div></li>
+<li><span class="check">&#10003;</span><div><b>Low cost</b><span style="color:var(--muted)">Services built around minimal cost.</span></div></li>
+<li><span class="check">&#10003;</span><div><b>Modern, AI-powered work</b><span style="color:var(--muted)">Up-to-date tools and AI to deliver modern results.</span></div></li></ul></div></section>
+<section id="process" class="alt"><div class="wrap"><h2>How it works</h2><p class="sub">A simple three-step process.</p><div class="grid">
+<div class="card step"><div class="n">01</div><h3>Discuss</h3><p>Tell us what you need and your goals.</p></div>
+<div class="card step"><div class="n">02</div><h3>Build</h3><p>We create your project quickly and keep you updated.</p></div>
+<div class="card step"><div class="n">03</div><h3>Launch</h3><p>Your project goes live, ready for your audience.</p></div></div></div></section>
+<section id="faq"><div class="wrap"><h2>Frequently asked questions</h2><p class="sub">Quick answers before you get in touch.</p>
+<details><summary>How do I get started?</summary><p>Send a message by email, phone, WhatsApp or the form below with a short description of what you need. We will discuss your goals and next steps.</p></details>
+<details><summary>How much does a website cost?</summary><p>Every project is different, so pricing depends on what you need. The focus is always on keeping cost minimal. Get in touch for a quote.</p></details>
+<details><summary>How long will my project take?</summary><p>Quick turnaround is a core part of the service. The timeline depends on the scope and is agreed with you during the Discuss step.</p></details>
+<details><summary>Can you help with more than websites?</summary><p>Yes. Services also include app development, AI tools, content creation and social media campaigns.</p></details>
+</div></section>
+<section id="contact" class="contact"><div class="wrap"><h2>Contact</h2><p class="sub">Ready to start? Reach out by email, phone or WhatsApp.</p><div class="grid">
+<a class="card" href="mailto:Buchimmichael@gmail.com"><h3>Email</h3><b>Buchimmichael@gmail.com</b></a>
+<a class="card" href="tel:+2348147894209"><h3>Phone</h3><b>+2348147894209</b></a>
+<a class="card" href="https://wa.me/2348147894209" target="_blank" rel="noopener"><h3>WhatsApp</h3><b>Chat on WhatsApp</b></a></div>
+<form id="cf"><h3>Send a message</h3><div class="row"><input id="fn" placeholder="Your name" required><select id="fs"><option>Website Development</option><option>App Development</option><option>AI Tools</option><option>Content Creation</option><option>Social Media Campaigns</option><option>Other</option></select></div>
+<textarea id="fm" rows="4" placeholder="Tell us about your project" required></textarea>
+<div class="fbtn"><button class="btn" type="submit" data-via="wa">Send via WhatsApp</button><button class="btn ghost" type="submit" data-via="mail">Send via Email</button></div></form>
+</div></section>
+<footer><div class="wrap">&copy; <span id="y"></span> BuchTech Super Intelligence Services &middot; <a href="mailto:Buchimmichael@gmail.com">Buchimmichael@gmail.com</a> &middot; <a href="tel:+2348147894209">+2348147894209</a></div></footer>
+<a class="wa" href="https://wa.me/2348147894209" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.3c0-.1-.2-.2-.5-.3z"/></svg></a>
+<button id="top" aria-label="Back to top" onclick="scrollTo({top:0})">&uarr;</button>
+<script>let via='wa';document.querySelectorAll('#cf button').forEach(b=>b.onclick=()=>via=b.dataset.via);
+document.getElementById('cf').onsubmit=e=>{e.preventDefault();const t=`Hello BuchTech, I'm ${fn.value}. Service: ${fs.value}. ${fm.value}`;
+if(via=='wa')open('https://wa.me/2348147894209?text='+encodeURIComponent(t),'_blank');else location.href='mailto:Buchimmichael@gmail.com?subject='+encodeURIComponent('Project enquiry: '+fs.value)+'&body='+encodeURIComponent(t)};
+addEventListener('scroll',()=>document.getElementById('top').classList.toggle('show',scrollY>500));
+document.getElementById('y').textContent=new Date().getFullYear();document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>document.querySelector('.links').classList.remove('open'));</script>
+</body></html>
